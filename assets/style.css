@@ -283,14 +283,14 @@ section .title::after{
     margin-bottom: 40px;
 }
 
-.Experience .title::after {
+/* .Experience .title::after {
     background: #111;
     content: "Where I've Worked";
     font-weight: 600;
     display: block;
     text-align: center;
     margin: 10px auto;
-}
+} */
 
 .Experience .Experience-content {
     display: flex;
@@ -300,14 +300,14 @@ section .title::after{
 }
 
 /* Base styling for Experience title */
-.Experience .title::after {
+/* .Experience .title::after {
     background: #111;
     content: "Where I've Worked";
     font-weight: 600;
     display: block;
     text-align: center;
     margin: 10px auto;
-}
+} */
 
 /* Ensure Experience content wraps properly */
 .Experience .Experience-content {
