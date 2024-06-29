@@ -171,7 +171,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url('/images/Background_img_Home.jpg');
+    background: url('images/Background_img_Home.jpg');
 	background-position: bottom;
     height: 100vh;
     color: #fff;
