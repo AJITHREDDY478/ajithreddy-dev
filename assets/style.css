@@ -184,13 +184,18 @@ section .title::after{
   width: 100%;
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: left;
 }
 .home .max-width .row{
   margin-right: 0;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #cfd7e1;
+    font-size: 35px;
 }
 .home .home-content .text-2{
     font-size: 75px;

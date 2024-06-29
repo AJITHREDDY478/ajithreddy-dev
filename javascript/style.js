@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing",{
-		strings: ["Full Stack Developer", "Ruby on Rails Developer", "Coding Enthusiast"],
+		strings: ["Fullstack Developer", "Ruby on Rails Developer", "Coding Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Full Stack Developer", "Ruby on Rails Developer", "Coding Enthusiast"],
+        strings: ["Focusing on Fullstack developer", "Specializing in Ruby on Rails Developer", ""],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
