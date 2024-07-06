@@ -48,6 +48,18 @@ $(document).ready(function(){
         loop: true
     });
 
+// JavaScript to show loader on page load
+$(window).on('load', function() {
+    $('.loader-wrapper').fadeOut('slow', function() {
+        $(this).remove();
+    });
+    $('body').addClass('loaded');
+});
+
+
+
+
+
      // owl carousel script
 //     $('.carousel').owlCarousel({
 //         margin: 20,
