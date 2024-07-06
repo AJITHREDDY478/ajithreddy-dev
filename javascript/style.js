@@ -50,14 +50,11 @@ $(document).ready(function(){
 
 // JavaScript to show loader on page load
 $(window).on('load', function() {
-    setTimeout(function() {
-        $('.loader-wrapper').fadeOut('slow', function() {
-            $(this).remove();
-        });
-        $('body').addClass('loaded');
-    }, 1000); // Adding a delay of 1 second to ensure everything is loaded
+    $('.loader-wrapper').fadeOut('slow', function() {
+        $(this).remove();
+    });
+    $('body').addClass('loaded');
 });
-
 
 
 
