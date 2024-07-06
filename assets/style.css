@@ -835,7 +835,6 @@ footer span a:hover {
 
 
 
-
 /* Loader Styles */
 .loader-wrapper {
     position: fixed;
@@ -850,7 +849,7 @@ footer span a:hover {
     z-index: 9999; /* Ensure it's above other content */
     opacity: 1; /* Start with full opacity */
     transition: opacity 0.5s ease; /* Smooth transition for opacity */
-  }
+}
 
 .loader-wrapper .lds-ellipsis {
     display: inline-block;
@@ -915,6 +914,7 @@ footer span a:hover {
         transform: translate(24px, 0);
     }
 }
+
 
 
 
