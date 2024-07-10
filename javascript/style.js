@@ -1,13 +1,16 @@
+// jQuery function to ensure the script runs only after the document is ready
 $(document).ready(function () {
+
+    // Scroll event listener on the window
     $(window).scroll(function () {
-        // sticky navbar on scroll script
+        // Sticky navbar script
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
             $('.navbar').removeClass("sticky");
         }
-        
-        // scroll-up button and whatsapp button show/hide script
+
+        // Show/hide scroll-up and WhatsApp buttons
         if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
             $('.whatsapp-btn').fadeIn().addClass("show");
@@ -17,25 +20,25 @@ $(document).ready(function () {
         }
     });
 
-    // slide-up script
+    // Click event for scroll-up button
     $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 });
-        // removing smooth scroll on slide-up button click
+        // Disable smooth scroll on scroll-up button click
         $('html').css("scrollBehavior", "auto");
     });
 
+    // Enable smooth scroll on navbar menu item click
     $('.navbar .menu li a').click(function () {
-        // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
+    // Toggle menu/navbar script
     $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
+    // Typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Fullstack Developer", "Ruby on Rails Developer", "Coding Enthusiast"],
         typeSpeed: 100,
@@ -51,19 +54,16 @@ $(document).ready(function () {
     });
 });
 
+// Function to handle WhatsApp button click
 function handleWhatsAppClick(event) {
     // Display a confirmation dialog
-    var confirmed = confirm("Do you want to text me on WhatsApp?");
+    let confirmed = confirm("Thank you for reaching out! Do you want to text me on WhatsApp?");
 
     // If user confirms, show a message and log the interaction
     if (confirmed) {
-        alert("Thank you for reaching out!");
         console.log("WhatsApp button clicked - User confirmed and initiated contact.");
     } else {
         // Provide feedback if the user cancels
-        alert("No problem! Feel free to reach out whenever you're ready.");
-        
-        // Prevent default action and stop event propagation
         if (event.stopPropagation) {
             event.stopPropagation(); // Modern browsers
         } else {
@@ -71,15 +71,41 @@ function handleWhatsAppClick(event) {
         }
         
         if (event.preventDefault) {
-            event.preventDefault(); // Prevent default action
+            event.preventDefault(); // Modern browsers
         } else {
-            event.returnValue = false; // For IE 8 and earlier
+            event.returnValue = false; // IE 8 and earlier
         }
         
-        return false; // Return false to prevent further propagation and default action
+        return false; // Prevent default action and further propagation
     }
 }
 
+// Vanilla JavaScript function to handle form submission
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contactForm");
 
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
 
+        // Callback function to display a thank you message
+        function showThankYouMessage() {
+            const thankYouMessage = document.createElement("div");
+            thankYouMessage.className = "thank-you-message";
+            thankYouMessage.textContent = "Thank you for your message! I will get back to you soon.";
+            
+            // Add the thank you message to the DOM
+            contactForm.appendChild(thankYouMessage);
 
+            // Optionally, clear the form fields
+            contactForm.reset();
+        }
+
+        // Call the callback function
+        showThankYouMessage();
+    });
+});
+
+// const toggleBtn = document.querySelector('.theme-toggle-btn');
+//     toggleBtn.addEventListener('click', () => {
+//         document.body.classList.toggle('dark-mode');
+//     });
