@@ -141,13 +141,15 @@ section .title::after{
     display: block; /* Ensure it's visible by default */
     z-index: 999;
 }
-.scroll-up-btn{
+/* scroll-up button */
+/* Scroll Up Button */
+.scroll-up-btn {
     position: fixed;
     height: 45px;
     width: 42px;
     background: #f39c12;
-    right: 30px;
-    bottom: 10px;
+    right: 30px; /* Position on the right side */
+    bottom: 30px;
     text-align: center;
     line-height: 45px;
     color: #fff;
@@ -160,14 +162,53 @@ section .title::after{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
-    bottom: 30px;
+.scroll-up-btn.show {
     opacity: 1;
     pointer-events: auto;
 }
-.scroll-up-btn:hover{
+.scroll-up-btn:hover {
     filter: brightness(90%);
 }
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 27px; /* Adjust to position above scroll-up button */
+    right: 80px; /* Position on the right side */
+    z-index: 100;
+}
+.whatsapp-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+.whatsapp-btn a:hover {
+    background-color: #128c7e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* home section styling */
 .home{
     display: flex;
@@ -982,6 +1023,14 @@ footer span a:hover {
         right: 15px;
         bottom: 15px;
         height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .whatsapp-btn{
+        right: 75px;
+        bottom: 15px;
+        height: 45px;
         width: 35px;
         font-size: 23px;
         line-height: 38px;
