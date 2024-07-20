@@ -778,13 +778,13 @@ section .title::after{
 
 
 
-/* contact section styling */
+/* Contact section styling */
 .contact h2 {
     font-weight: 700;
 }
 
 .contact .title::after {
-    content: "If you're interested in my profile, feel free to get in touch!";
+    content: "GET IN TOUCH";
     font-weight: 600;
 }
 
@@ -857,6 +857,7 @@ section .title::after{
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
+    margin: 0.5em;
 }
 
 .contact .right form .name input:focus,
@@ -895,7 +896,7 @@ section .title::after{
     color: #4A90E2;
     background: none;
 }
-/* Styles for the result messages */
+
 /* Styles for the result messages */
 .contact #result {
     font-size: 18px; /* Increased font size for better visibility */
@@ -922,13 +923,23 @@ section .title::after{
 
 .contact .result-message.success {
     color: #00b4db; /* Vibrant green for "Form submitted successfully" */
-    background-color: rgba(209, 231, 212, 0.7); /* Light green background with some transparency */
+    background-color: rgba(0, 255, 0, 0.1); /* Soft green background with some transparency */
 }
 
-.contact .result-message.error {
-    color: #7d3f39; /* Earthy red-brown color for error messages */
-    background-color: rgba(244, 214, 210, 0.7); /* Light red-brown background with some transparency */
+/* Media queries for small devices */
+@media (max-width: 768px) {
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 20px; /* Add space between columns */
+    }
+
+    .contact .right form .name,
+    .contact .right form .email,
+    .contact .right form .msg {
+        margin-bottom: 20px; /* Increase space between form fields */
+    }
 }
+
 
 
 
