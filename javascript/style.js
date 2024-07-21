@@ -1,5 +1,17 @@
 // jQuery function to ensure the script runs only after the document is ready
 $(document).ready(function () {
+    // Cache the footer element and WhatsApp button
+    var $footer = $('footer');
+    var $whatsappBtn = $('.whatsapp-btn');
+
+    // Function to check if the WhatsApp button is in the footer section
+    function isInFooter() {
+        var footerOffsetTop = $footer.offset().top;
+        var windowHeight = $(window).height();
+        var scrollPosition = $(window).scrollTop() + windowHeight;
+
+        return scrollPosition >= footerOffsetTop;
+    }
 
     // Scroll event listener on the window
     $(window).scroll(function () {
@@ -13,10 +25,16 @@ $(document).ready(function () {
         // Show/hide scroll-up and WhatsApp buttons
         if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
-            $('.whatsapp-btn').fadeIn().addClass("show");
+
+            // Use elsif condition to hide WhatsApp button when it's in the footer section
+            if (isInFooter()) {
+                $whatsappBtn.fadeOut().removeClass("show");
+            } else {
+                $whatsappBtn.fadeIn().addClass("show");
+            }
         } else {
             $('.scroll-up-btn').removeClass("show");
-            $('.whatsapp-btn').fadeOut().removeClass("show");
+            $whatsappBtn.fadeOut().removeClass("show");
         }
     });
 

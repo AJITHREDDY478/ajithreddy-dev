@@ -142,7 +142,6 @@ section .title::after{
     z-index: 999;
 }
 /* scroll-up button */
-/* Scroll Up Button */
 .scroll-up-btn {
     position: fixed;
     height: 45px;
@@ -173,10 +172,16 @@ section .title::after{
 /* WhatsApp Button */
 .whatsapp-btn {
     position: fixed;
-    bottom: 27px; /* Adjust to position above scroll-up button */
-    right: 80px; /* Position on the right side */
-    z-index: 100;
+    bottom: 27px; /* Increased spacing to ensure it doesn't overlap with the footer */
+    right: 80px; /* Adjusted for a more consistent appearance */
+    z-index: 100; /* Ensure it stays above other content */
+    display: none; /* Hide by default */
 }
+
+.whatsapp-btn.show {
+    display: flex; /* Show when the 'show' class is added */
+}
+
 .whatsapp-btn a {
     display: flex;
     align-items: center;
@@ -191,9 +196,12 @@ section .title::after{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
 }
+
 .whatsapp-btn a:hover {
     background-color: #128c7e;
 }
+
+
 
 
 .thank-you-message {
