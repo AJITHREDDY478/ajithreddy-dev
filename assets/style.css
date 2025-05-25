@@ -337,7 +337,7 @@ section .title::after{
     border-radius: 10px;
 }
 .about .about-content .right{
-    width: 70%;
+    width: 65%;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -787,152 +787,8 @@ section .title::after{
 
 
 /* Contact section styling */
-.contact h2 {
-    font-weight: 700;
-}
 
-.contact .title::after {
-    content: "GET IN TOUCH";
-    font-weight: 600;
-}
 
-.contact .contact-content .column {
-    width: calc(50% - 30px);
-}
-
-.contact .contact-content .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.contact .contact-content .left p {
-    text-align: justify;
-}
-
-.contact .contact-content .left .icons {
-    margin: 10px 0;
-}
-
-.contact .contact-content .row {
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-
-.contact .contact-content .row .info {
-    margin-left: 30px;
-}
-
-.contact .contact-content .row i {
-    font-size: 25px;
-    color: #4A90E2;
-}
-
-.contact .contact-content .info .head {
-    font-weight: 500;
-}
-
-.contact .contact-content .info .sub-title {
-    color: #333;
-}
-
-/* Form Styling */
-.contact .right form {
-    padding: 20px; /* Added padding for spacing */
-}
-
-.contact .right form .form-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact .right form .name,
-.contact .right form .email,
-.contact .right form .msg {
-    margin-bottom: 15px;
-}
-
-.contact .right form .name input,
-.contact .right form .email input,
-.contact .right form .msg input {
-    height: 45px;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-    margin: 0.5em;
-}
-
-.contact .right form .name input:focus,
-.contact .right form .email input:focus,
-.contact .right form .msg input:focus {
-    border-color: #b3b3b3;
-}
-
-.contact .right form .msg input {
-    height: 80px; /* Adjust height for the message input */
-    padding-top: 10px;
-    resize: none;
-}
-
-.contact .right form .submit {
-    display: flex;
-    align-items: center;
-}
-
-.contact .right form .submit button {
-    color: #fff;
-    display: block;
-    width: 160px!important;
-    height: 45px;
-    outline: none;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    background: #4A90E2;
-    border: 2px solid #4A90E2;
-    transition: all 0.3s ease;
-}
-
-.contact .right form .submit button:hover {
-    color: #4A90E2;
-    background: none;
-}
-
-/* Styles for the result messages */
-.contact #result {
-    font-size: 18px; /* Increased font size for better visibility */
-    font-weight: 600; /* Increased font weight for emphasis */
-    margin-top: 10px;
-}
-
-.contact .result-message {
-    padding: 10px;
-    border-radius: 8px; /* Slightly larger border radius for a softer look */
-    display: inline-block;
-    font-family: 'Arial', sans-serif;
-    font-size: 18px; /* Increased font size */
-    font-weight: 600; /* Increased font weight */
-    backdrop-filter: blur(8px); /* Glassy effect */
-    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.contact .result-message.wait {
-    color: #388e3c; /* Forest green color for "Please wait..." */
-    background-color: rgba(227, 242, 215, 0.7); /* Soft green background with some transparency */
-}
-
-.contact .result-message.success {
-    color: #00b4db; /* Vibrant green for "Form submitted successfully" */
-    background-color: rgba(0, 255, 0, 0.1); /* Soft green background with some transparency */
-}
 
 /* Media queries for small devices */
 @media (max-width: 768px) {
@@ -1013,7 +869,7 @@ footer span a:hover {
     }
 }
 .summary-heading {
-    color: #333;
+    color: #dc0000;
     font-size: 24px;
     font-weight: bold;
     text-align: center;

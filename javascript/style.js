@@ -1,5 +1,10 @@
 // jQuery function to ensure the script runs only after the document is ready
 $(document).ready(function () {
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+    
     // Cache the footer element and WhatsApp button
     var $footer = $('footer');
     var $whatsappBtn = $('.whatsapp-btn');
