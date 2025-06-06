@@ -1,6 +1,7 @@
 # AJITHREDDY-DEV
 
-> 🚀 Showcase Your Skills, Inspire Your Future
+> 🚀 Showcase Your Skills, Inspire Your Future  
+> 👨‍💻 Built by [Ajith Reddy](https://ajithreddy478.github.io/ajithreddy-dev/) — **Ruby on Rails Developer (3+ years)**
 
 ![Last Commit](https://img.shields.io/github/last-commit/AJITHREDDY478/ajithreddy-dev?style=flat&logo=git&logoColor=white&color=0080ff)
 ![Top Language](https://img.shields.io/github/languages/top/AJITHREDDY478/ajithreddy-dev?style=flat&color=0080ff)
@@ -8,10 +9,10 @@
 
 ---
 
-## 📌 Built With
+## 🌐 Live Preview
 
-![Markdown](https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black)
+👉 **Check the live version of this portfolio:**  
+[https://ajithreddy478.github.io/ajithreddy-dev/](https://ajithreddy478.github.io/ajithreddy-dev/)
 
 ---
 
@@ -23,23 +24,24 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [Testing](#testing)
+- [About Me](#about-me)
 
 ---
 
 ## 🔍 Overview
 
-**`ajithreddy-dev`** is a powerful portfolio template built to showcase developer skills and projects in an interactive and modern format.
+**`ajithreddy-dev`** is a professional developer portfolio template to showcase skills, projects, and contact info in an interactive and modern format.
 
 ### Why `ajithreddy-dev`?
 
-This project was built to enhance your online visibility as a developer. It includes:
+This project aims to enhance your online visibility as a developer. It features:
 
-- 🎨 **Interactive UI** – Highlights your work visually
-- 📱 **Responsive Design** – Works on all devices
-- ✨ **Dynamic Effects** – Text animations using `Typed.js`
-- ⚡ **Performance Optimization** – Lazy loading for faster page loads
-- 🔄 **User Interaction** – Sticky navbar, scroll-to-top button
-- 💬 **Real-time Feedback** – Smooth and instant form response handling
+- 🎨 **Interactive UI** – Beautiful layout to highlight work and projects
+- 📱 **Responsive Design** – Optimized for mobile, tablet, and desktop
+- ✨ **Dynamic Effects** – Typed.js animations for engaging experience
+- ⚡ **Performance Optimization** – Lazy loading and fast load times
+- 🔄 **Navigation UX** – Sticky navbar & scroll-to-top button
+- 💬 **Real-time Contact Form** – Instant feedback on submission
 
 ---
 
@@ -47,24 +49,30 @@ This project was built to enhance your online visibility as a developer. It incl
 
 ### ✅ Prerequisites
 
-Before you begin, make sure you have the following installed:
+Make sure you have:
 
-- HTML/CSS/JavaScript basics
-- A modern browser (Chrome, Firefox, etc.)
-- Optional: Node.js and a local server tool
+- HTML/CSS/JS knowledge
+- Browser (Chrome, Firefox, etc.)
+- (Optional) Local server or Live Server extension
 
 ### 📦 Installation
-
-To get your portfolio running locally:
 
 ```bash
 # Clone the repository
 git clone https://github.com/AJITHREDDY478/ajithreddy-dev
 
-# Navigate to the folder
+# Navigate into the project
 cd ajithreddy-dev
 
-# (Optional) Start a live server
-# Example using Live Server (VSCode extension) or http-server:
-# npm install -g http-server
-# http-server .
+# Open index.html manually
+# OR serve using a local server
+# Example: http-server .
+```
+
+---
+
+Let me know if you want to:
+
+- Add **project cards dynamically with JSON or a CMS**  
+- Integrate the **form submission via a backend like Rails or a serverless API**  
+- Include **GitHub Actions for CI/CD deployment**
