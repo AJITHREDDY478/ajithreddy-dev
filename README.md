@@ -1,7 +1,6 @@
 # AJITHREDDY-DEV
 
-> 🚀 Showcase Your Skills, Inspire Your Future  
-> 👨‍💻 Built by [Ajith Reddy](https://ajithreddy478.github.io/ajithreddy-dev/) — **Ruby on Rails Developer (3+ years)**
+> 👨‍💻 Built by <a href="https://ajithreddy478.github.io/ajithreddy-dev/" target="_blank" rel="noopener noreferrer">Ajith Reddy</a> — **Ruby on Rails Developer (3+ years)**
 
 ![Last Commit](https://img.shields.io/github/last-commit/AJITHREDDY478/ajithreddy-dev?style=flat&logo=git&logoColor=white&color=0080ff)
 ![Top Language](https://img.shields.io/github/languages/top/AJITHREDDY478/ajithreddy-dev?style=flat&color=0080ff)
