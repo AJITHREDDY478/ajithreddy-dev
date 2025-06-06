@@ -6,12 +6,14 @@
 ![Last Commit](https://img.shields.io/github/last-commit/AJITHREDDY478/ajithreddy-dev?style=flat&logo=git&logoColor=white&color=0080ff)
 ![Top Language](https://img.shields.io/github/languages/top/AJITHREDDY478/ajithreddy-dev?style=flat&color=0080ff)
 ![Language Count](https://img.shields.io/github/languages/count/AJITHREDDY478/ajithreddy-dev?style=flat&color=0080ff)
+![Repo Size](https://img.shields.io/github/repo-size/AJITHREDDY478/ajithreddy-dev?style=flat&color=0080ff)
+![Issues](https://img.shields.io/github/issues/AJITHREDDY478/ajithreddy-dev?style=flat&color=0080ff)
 
 ---
 
 ## 🌐 Live Preview
 
-👉 **Check the live version of this portfolio:**  
+👉 **Check the live portfolio:**  
 [https://ajithreddy478.github.io/ajithreddy-dev/](https://ajithreddy478.github.io/ajithreddy-dev/)
 
 ---
@@ -23,25 +25,19 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Testing](#testing)
+- [Deployment](#deployment)
 - [About Me](#about-me)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [License](#license)
 
 ---
 
 ## 🔍 Overview
 
-**`ajithreddy-dev`** is a professional developer portfolio template to showcase skills, projects, and contact info in an interactive and modern format.
-
-### Why `ajithreddy-dev`?
-
-This project aims to enhance your online visibility as a developer. It features:
-
-- 🎨 **Interactive UI** – Beautiful layout to highlight work and projects
-- 📱 **Responsive Design** – Optimized for mobile, tablet, and desktop
-- ✨ **Dynamic Effects** – Typed.js animations for engaging experience
-- ⚡ **Performance Optimization** – Lazy loading and fast load times
-- 🔄 **Navigation UX** – Sticky navbar & scroll-to-top button
-- 💬 **Real-time Contact Form** – Instant feedback on submission
+`ajithreddy-dev` is a professional portfolio website built to showcase my skills, projects, and experience as a Ruby on Rails developer. It provides a clean, responsive, and interactive UI for recruiters and clients to explore my work easily.
 
 ---
 
@@ -49,30 +45,18 @@ This project aims to enhance your online visibility as a developer. It features:
 
 ### ✅ Prerequisites
 
-Make sure you have:
-
-- HTML/CSS/JS knowledge
-- Browser (Chrome, Firefox, etc.)
-- (Optional) Local server or Live Server extension
+- Basic knowledge of HTML, CSS, and JavaScript  
+- Modern web browser (Chrome, Firefox, Edge, Safari)  
+- (Optional) Live Server or local web server for development preview  
 
 ### 📦 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/AJITHREDDY478/ajithreddy-dev
+git clone https://github.com/AJITHREDDY478/ajithreddy-dev.git
 
-# Navigate into the project
+# Navigate into the project folder
 cd ajithreddy-dev
 
-# Open index.html manually
-# OR serve using a local server
-# Example: http-server .
-```
-
----
-
-Let me know if you want to:
-
-- Add **project cards dynamically with JSON or a CMS**  
-- Integrate the **form submission via a backend like Rails or a serverless API**  
-- Include **GitHub Actions for CI/CD deployment**
+# Open index.html in your browser directly
+# OR start a local server, e.g. with VSCode Live Server extension
